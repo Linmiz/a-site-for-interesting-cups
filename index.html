@@ -65,13 +65,62 @@
     <h1 class="title">Оформлення замовлення</h1>
     <p class="title-explanation">Вкажіть свої дані та вибір для замовлення</p>
 
-    <form class="order-form">
-      <label for="name">Ваше ім'я:</label><br>
-      <input type="text" id="name" name="name" class="form-input"><br>
+<form class="order-form">
+      <div class="form-group">
+        <label for="first-name">Ім'я:</label>
+        <input type="text" id="first-name" name="first-name" class="form-input" placeholder="Ваше ім'я" required>
+      </div>
 
-      <label for="details">Деталі замовлення:</label><br>
-      <textarea id="details" name="details" rows="5" class="form-input form-textarea"></textarea><br>
+      <div class="form-group">
+        <label for="last-name">Прізвище:</label>
+        <input type="text" id="last-name" name="last-name" class="form-input" placeholder="Ваше прізвище" required>
+      </div>
 
+      <div class="form-group">
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" class="form-input" placeholder="+380 ХХХ ХХХ ХХ ХХ" pattern="\+380\d{9}" required
+        title="Введіть номер у форматі +380XXXXXXXXX">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" class="form-input" placeholder="example@mail.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Адреса доставки:</label>
+        <textarea id="address" name="address" class="form-input form-textarea" rows="3" placeholder="Ваша адреса" required></textarea>
+      </div>
+
+      <h3 class="title" style="font-size: 30px; color: var(--cian); margin-top: 20px;">Дані банківської карти</h3>
+
+      <div class="form-group">
+        <label for="card-number">Номер карти:</label>
+        <input type="text" id="card-number" name="card-number" class="form-input" placeholder="1234 5678 9012 3456" pattern="\d{16}" required
+        title="Введіть 16 цифр без пробілів">
+      </div>
+
+      <div class="form-group">
+        <label for="expiry">Термін дії:</label>
+        <input type="text" id="expiry" name="expiry" class="form-input" placeholder="MM/YY" pattern="(0[1-9]|1[0-2])\/\d{2}" required
+        title="Введіть у форматі MM/YY">
+      </div>
+
+      <div class="form-group">
+        <label for="cvc">CVC:</label>
+        <input type="text" id="cvc" name="cvc" class="form-input" placeholder="123" pattern="\d{3}" required
+        title="Введіть 3 цифри CVC">
+      </div>
+
+      <div class="form-group">
+  <label for="meme-file">Виберіть мем для кружки:</label>
+  <input type="file" id="meme-file" name="meme-file" class="form-input" accept="image/*">
+  <small>Або вставте посилання на картинку:</small>
+  <input type="url" id="meme-url" name="meme-url" class="form-input" placeholder="https://example.com/meme.jpg">
+</div>
+<div id="meme-preview" style="margin-top: 10px;">
+  <img id="preview-img" src="" alt="Попередній перегляд" style="max-width: 300px; display:none; border-radius:10px;">
+</div>
       <button type="submit" class="form-button">Надіслати замовлення</button>
     </form>
 
