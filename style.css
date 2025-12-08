@@ -79,7 +79,7 @@ main {
   gap: 50px;
 }
 
-.container {
+.container-title {
   background: #1c2b31;
   min-height: 70vh;
   border-radius: 20px;
@@ -89,6 +89,7 @@ main {
   display: flex;
   gap: 30px;
   position: relative;
+  padding-right: 600px;
 }
 
 .main-text-container{
@@ -99,6 +100,18 @@ main {
   font-size: 70px;
   color: var(--cian);
   padding: 30px; 
+}
+
+.container{
+  background: #1c2b31;
+  min-height: 70vh;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 0 30px rgba(0, 255, 21, 0.3);
+  opacity: 0.7;
+  display: flex;
+  gap: 30px;
+  position: relative;
 }
 
 .title-explanation{
@@ -144,6 +157,43 @@ main {
   border-radius: 10px; 
   padding: 0px;
   margin: 0px;
+}
+
+.search-input {
+  width: 60%;
+  padding: 12px 20px;
+  font-size: 20px;
+  border: 2px solid var(--cian);
+  background: #222;
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.search-btn {
+  padding: 12px 20px;
+  font-size: 20px;
+  background: var(--cian);
+  border: none;
+  color: #111;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.results-container {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.results-container img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
 }
 
 .order-form {

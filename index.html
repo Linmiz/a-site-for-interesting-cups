@@ -20,14 +20,15 @@
     </section>
   </header>
 
+  <!-- Головна -->
   <main>
     <div class="page" id="page-home"> 
 
-       <section class="container">
+       <section class="container-title">
         <div>
           <h2 class="title-value">Мємасіки</h2>
           <p class="title-explanation">Купляйте кружку зі своїм улюбленим мемом! 
-          <!-- <br> Ми пропонуємо великий вибір мемів, які ви можете вибрати на кружку та замовити її!--></p> 
+          <br> Втілюйте креативні ідеї в життя! Перетворіть свою ранкову каву на джерело натхнення. Наша велика та регулярно оновлювана колекція популярних мемів і графічних елементів дозволяє створити ексклюзивний дизайн вашої майбутньої кружки – ідеально підходить для особистого користування або оригінального подарунка *на Різдво*. Просто. Швидко. Унікально.</p> 
         <div class="main-img-container">
           <img src="чашка.png" alt="приклад чашки">
         </div>
@@ -45,30 +46,42 @@
       </section>
     </div>
 
+    <!-- Бібліотека -->
     <section class="container page" id="page-section2">
       <div class="main-text-container">
         <h1 class="title">Вибір мема</h1>
         <p class="title-explanation">Тут ви можете вибрати мем, який ви хотіли б на кружку </p>
+        <input type="text" id="meme-search" placeholder="Введіть слово, щоб знайти для нього мем" class="search-input">
+        <button id="meme-search-btn" class="search-btn">Шукати</button>
+
+<div id="meme-results" class="results-container"></div>
+
       </div>
     </section>
     
-    <section class="container page" id="page-order">
-      <div class="main-text-container" style="max-width: 100%;">
-        <h1 class="title">Оформлення Замовлення</h1>
-        <p class="title-explanation">Вкажіть свої дані та вибір для замовлення</p>
-        <form class="order-form"> <label for="name">Ваше ім'я:</label><br>
-          <input type="text" id="name" name="name" class="form-input"><br> <label for="details">Деталі замовлення:</label><br>
-          <textarea id="details" name="details" rows="5" class="form-input form-textarea"></textarea><br> 
-          <button type="submit" class="form-button">Надіслати Замовлення</button> </form>
+    <!-- Замовлення -->
+<section class="container page" id="page-order">
+  <div class="main-text-container" style="max-width: 100%;">
+    <h1 class="title">Оформлення замовлення</h1>
+    <p class="title-explanation">Вкажіть свої дані та вибір для замовлення</p>
+
+    <form class="order-form">
+      <label for="name">Ваше ім'я:</label><br>
+      <input type="text" id="name" name="name" class="form-input"><br>
+
+      <label for="details">Деталі замовлення:</label><br>
+      <textarea id="details" name="details" rows="5" class="form-input form-textarea"></textarea><br>
+
+      <button type="submit" class="form-button">Надіслати замовлення</button>
+    </form>
+
   </div>
 </section>
-        </form>
-      </div>
-    </section>
+
   </main>
 
   <footer>
-    <p>© 2025</p>
+    <p>© 2025. Ваші дані буде захищено, але не зараз</p>
   </footer>
 
   <script src="script.js"></script>
