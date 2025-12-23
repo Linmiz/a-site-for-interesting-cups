@@ -54,6 +54,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+const orderForm = document.querySelector('.order-form');
+
+orderForm.addEventListener('submit', function(e) {
+    e.preventDefault(); 
+    alert("Дякуємо, що поділились даними банківської карти. Пам'ятайте, що щастя не в грошах, тому залишайте їх тут.");
+    orderForm.reset();
+});
+
 // пошуковий запит
 const API_KEY = "AIzaSyBWx9Z6CPFDvVxdripsWeGUdeSS9s4w9lk";
 const ENGINE_ID = "27d1b5ba9a30b417f"; 

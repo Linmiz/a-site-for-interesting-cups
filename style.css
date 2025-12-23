@@ -96,6 +96,10 @@ main {
   max-width: 60%;
 }
 
+.main-text-container-section2{
+  max-width: 100%;
+}
+
 .title {
   font-size: 70px;
   color: var(--cian);
@@ -261,4 +265,276 @@ footer {
   background: #000;
   font-size: 0.9rem;
   color: #aaa;
+}
+
+/* адаптив на телефон*/
+
+@media (max-width: 768px) {
+
+header {
+  flex-direction: column;
+  padding: 10px;
+}
+
+.logo-img {
+  width: 70px;
+}
+
+.section {
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.section h4 {
+  font-size: 22px;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+main {
+  padding: 1.5rem 0;
+  gap: 30px;
+}
+
+.page {
+  width: 95%;
+  gap: 30px;
+}
+
+.container,
+.container-title {
+  flex-direction: column;
+  padding: 1.5rem;
+  min-height: auto;
+}
+
+.container-title {
+  padding-right: 1.5rem;
+}
+
+.title {
+  font-size: 38px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.title-value {
+  font-size: 34px;
+  padding-left: 0;
+  text-align: center;
+}
+
+.title-explanation {
+  font-size: 18px;
+  text-align: center;
+}
+
+.main-text-container,
+.main-text-container-section2 {
+  max-width: 100%;
+}
+
+.main-img-container {
+  position: static;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.main-img-container img,
+.meme-img-container img {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.meme-img-container {
+  text-align: center;
+}
+
+.search-input {
+  width: 100%;
+  font-size: 16px;
+}
+
+.search-btn {
+  width: 100%;
+  margin: 10px 0 0;
+  font-size: 16px;
+}
+
+.results-container {
+  justify-content: center;
+}
+
+.results-container img {
+  width: 140px;
+ }
+
+.order-form {
+  width: 100%;
+}
+
+.form-input,
+.form-textarea {
+  font-size: 16px;
+  padding: 12px 14px;
+}
+
+.form-button {
+  width: 100%;
+  font-size: 18px;
+  padding: 12px;
+}
+
+footer {
+  font-size: 12px;
+  padding: 0.8rem;
+}
+}
+
+/* адаптив на планшет */
+
+@media (max-width: 1024px) and (min-width: 769px) {
+
+header {
+  flex-direction: column;
+  padding: 12px 20px;
+  align-items: center;
+}
+
+.logo-img {
+  width: 80px;
+}
+
+.section {
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+}
+
+.section h4 {
+  font-size: 26px;
+  padding: 1rem;
+}
+
+main {
+  padding: 2rem 1rem;
+  gap: 40px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page {
+  width: 90%;
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-title,
+.container {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  min-height: auto;
+  gap: 20px;
+}
+
+.title {
+  font-size: 46px;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.title-value {
+  font-size: 42px;
+  padding-left: 0;
+  text-align: center;
+}
+
+.title-explanation {
+  font-size: 22px;
+  text-align: center;
+}
+
+.main-text-container,
+.main-text-container-section2 {
+  max-width: 100%;
+}
+
+.main-img-container {
+  position: static;
+  margin: 0 auto 25px;
+  text-align: center;
+}
+
+.main-img-container img {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.meme-img-container {
+  text-align: center;
+}
+
+.meme-img-container img {
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.search-input {
+  width: 80%;
+  font-size: 18px;
+}
+
+.search-btn {
+  font-size: 18px;
+}
+
+.results-container {
+  justify-content: center;
+  gap: 15px;
+}
+
+.results-container img {
+  width: 180px;
+  height: auto;
+}
+
+.order-form {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.form-input,
+.form-textarea {
+  font-size: 18px;
+  padding: 12px 22px;
+  width: 100%;
+  max-width: 700px;
+}
+
+.form-button {
+  width: 100%;
+  font-size: 18px;
+  padding: 12px;
+}
+
+footer {
+  font-size: 13px;
+  padding: 0.8rem;
+}
 }
